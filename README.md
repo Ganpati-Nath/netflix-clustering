@@ -73,53 +73,6 @@ and content groupings in the Netflix catalog.
 
 ------------------------------------------------------------------------
 
-## ⚙️ Technologies Used
-
-  Category          Tools / Libraries
-  ----------------- ---------------------------------
-  Language          Python 3.10
-  Data Handling     pandas, numpy
-  Text Processing   scikit-learn (TF-IDF, SVD)
-  Clustering        K-Means, GMM, DBSCAN
-  Visualization     matplotlib, seaborn, umap-learn
-  Model Saving      joblib
-
-------------------------------------------------------------------------
-
-## 🧾 Model Saving & Prediction Example
-
-``` python
-import joblib
-loaded_model = joblib.load("best_kmeans_model.pkl")
-
-def predict_new(text, numeric_features):
-    X_text_new = tfidf.transform([text])
-    X_num_new = scaler.transform([numeric_features])
-    X_text_new_reduced = svd.transform(X_text_new)
-    X_combined_new = hstack([X_text_new_reduced, csr_matrix(X_num_new)]).toarray()
-    return loaded_model.predict(X_combined_new)[0]
-
-print(predict_new("A romantic comedy of two strangers", [90, 5, 100]))
-```
-
-------------------------------------------------------------------------
-
-## 🗂️ Repository Structure
-
-    📁 netflix-content-clustering/
-    ├── 📄 README.md
-    ├── 📄 netflix_dataset.csv
-    ├── 📄 clustering_notebook.ipynb
-    ├── 📄 best_kmeans_model.pkl
-    ├── 📊 cluster_visualization_umap.png
-    └── 📂 src/
-        ├── data_preprocessing.py
-        ├── feature_engineering.py
-        ├── model_training.py
-        ├── visualization.py
-
-------------------------------------------------------------------------
-
 ## 📈 Conclusion
 
 The final model successfully grouped Netflix titles into meaningful
@@ -136,7 +89,6 @@ recommendations.
 
 **Ganpati Nath**\
 Deep Learning & Data Science Enthusiast\
-📧 \[LinkedIn Profile / GitHub Portfolio - Add yours here\]
 
 ------------------------------------------------------------------------
 
