@@ -88,7 +88,7 @@ recommendations.
 ## 🧑‍💻 Author
 
 **Ganpati Nath**\
-Deep Learning & Data Science Enthusiast\
+Deep Learning & Data Science Enthusiast
 
 ------------------------------------------------------------------------
 
